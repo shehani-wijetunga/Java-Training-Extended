@@ -5,7 +5,7 @@ public class ProductPrice{
 	public void calculatePrice(int quantity) throws MyException
 	{
         	double unitPrice = 100.00;
-		double total = unitPrice*quantity;
+		double total = unitPrice/quantity;
 		
 		if(total <= 0){
 			throw new MyException("Price is not found..");
